@@ -1,0 +1,4 @@
+include ':BaseAdapter'
+include ':app'
+include ':treeview'
+rootProject.name = "Design"

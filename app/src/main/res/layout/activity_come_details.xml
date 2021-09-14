@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_F7"
+    tools:context=".home.progressplan.fragment.activity.ProgressPlanOtherActivity">
+
+    <include layout="@layout/titlebar"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_marginTop="@dimen/dp_1"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/back_btn"
+        android:layout_marginTop="@dimen/dp_75"
+        android:layout_marginBottom="@dimen/dp_90"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_20"
+        android:text="返回"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"
+        android:layout_width="match_parent"
+        android:background="@drawable/submit_shape"
+        android:layout_height="@dimen/dp_40"/>
+
+</LinearLayout>

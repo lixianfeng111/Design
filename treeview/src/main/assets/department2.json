@@ -1,0 +1,64 @@
+{
+    "id": -1,
+    "deptName": "图册分类",
+    "children": [
+        {
+            "id": 7,
+            "deptName": "    专项设计 综合管线方案"
+        },
+        {
+            "id": 3,
+            "deptName": "    第01篇 线路"
+        },
+        {
+            "id": 4,
+            "deptName": "    第02篇 限界及轨旁系统"
+        },
+        {
+            "id": 5,
+            "deptName": "    第03篇 轨道"
+        },
+        {
+            "id": 6,
+            "deptName": "第04篇 车站工程",
+            "children" : [
+                {
+                    "id": 1,
+                    "deptName": "第01册 营城子站",
+                    "children" : [
+                        {
+                            "deptName": "第01分册 车站建筑",
+                            "id": 18
+                        },
+                        {
+                            "deptName": "第02分册 车站结果与防水",
+                            "id": 19
+                        },
+                        {
+                            "deptName": "第03分册 通风与空调",
+                            "id": 65
+                        }
+                    ]
+                },
+                {
+                    "id": 1,
+                    "deptName": "第02册 幸福村站",
+                    "children" : [
+                        {
+                            "deptName": "第01分册",
+                            "id": 18
+                        },
+                        {
+                            "deptName": "第02分册",
+                            "id": 19
+                        },
+                        {
+                            "deptName": "第03分册",
+                            "id": 65
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

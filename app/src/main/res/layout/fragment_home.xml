@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_F7"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebar"/>
+
+    <ScrollView
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:background="@drawable/headpic"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_190">
+
+                <ImageView
+                    android:id="@+id/weatherBa"
+                    android:scaleType="fitXY"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="添加城市+"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:id="@+id/city"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="@color/white"
+                            android:id="@+id/now_temperature"
+                            android:text="0C"
+                            android:textSize="35sp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <Space
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:textColor="@color/white"
+                            android:id="@+id/date"
+                            android:layout_marginRight="15dp"
+                            android:text="8月03日"
+                            android:textSize="12sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:textColor="@color/white"
+                            android:id="@+id/week"
+                            android:layout_marginRight="20dp"
+                            android:text="周六"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="@color/white"
+                            android:id="@+id/weather"
+                            android:text="多云"
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:textColor="@color/white"
+                            android:id="@+id/today_temperature"
+                            android:layout_marginLeft="20dp"
+                            android:text="21/23 ℃"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="@color/white"
+                            android:id="@+id/wind"
+                            android:text="东南风一级"
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:textColor="@color/white"
+                            android:id="@+id/air_quality"
+                            android:layout_marginLeft="20dp"
+                            android:text="空气质量：优"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:textColor="@color/white"
+                            android:id="@+id/aqi"
+                            android:layout_marginLeft="20dp"
+                            android:text="空气指数：50"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textColor="@color/white"
+                            android:id="@+id/tomorrow_weather"
+                            android:text="明天：多云"
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:textColor="@color/white"
+                            android:id="@+id/tomorrow_temperature"
+                            android:layout_marginLeft="20dp"
+                            android:text="21/23 ℃"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:textColor="@color/white"
+                            android:id="@+id/tomorrow_wind"
+                            android:layout_marginLeft="20dp"
+                            android:text="南风3级"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+<!--      RecyclerView外面加一层RelativeLayout解决RecyclerView显示不全问题-->
+            <RelativeLayout
+                android:descendantFocusability="blocksDescendants"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

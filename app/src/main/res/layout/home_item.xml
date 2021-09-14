@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_marginTop="@dimen/dp_1"
+    android:layout_marginLeft="@dimen/dp_1"
+    android:layout_weight="1"
+    android:id="@+id/linear"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:paddingTop="@dimen/dp_24"
+        android:id="@+id/image"
+        android:src="@mipmap/design_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/module_title"
+        android:text="项目首页"
+        android:textColor="@color/color_2F"
+        android:textSize="@dimen/sp_14"
+        android:drawablePadding="10dp"
+        android:paddingBottom="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
